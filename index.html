@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" type="image/x-icon" href="./assets/Instagram_icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" alt="logo" class="logo">
+            <div class="header-actions">
+                <img src="https://static.thenounproject.com/png/809337-200.png" alt="logo" class="header-action">
+                <img src="data:image/png;base64,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" alt="logo" class="header-action">    
+            </div>
+        </header>
+        <section class="status-container">
+            <div class="status">
+                <img src="./assets/jeremyrenner-profile.png" alt="profile-pic" class="profile-pic">
+                <span class="username">jeremyrenner</span>
+            </div>
+            <div class="status">
+                <img src="./assets/natgeotravel-profile.png" alt="profile-pic" class="profile-pic">
+                <span class="username">natgeotravel</span>
+            </div>
+            <div class="status">
+                <img src="./assets/charlieputh-profile.png" alt="profile-pic" class="profile-pic">
+                <span class="username">charlieputh</span>
+            </div>
+            <div class="status">
+                <img src="./assets/GOT-profile.png" alt="profile-pic" class="profile-pic">
+                <span class="username">gameofthrones</span>
+            </div>
+            <div class="status">
+                <img src="./assets/billi-profile.png" alt="profile-pic" class="profile-pic">
+                <span class="username">billieeilish</span>
+            </div>
+            <div class="status">
+                <img src="./assets/marvel-profile.png" alt="profile-pic" class="profile-pic">
+                <span class="username">marvelstudios</span>
+            </div>
+            <div class="status">
+                <img src="./assets/alluarjunonline-profile.jpg" alt="profile-pic" class="profile-pic">
+                <span class="username">alluarjunonline</span>
+            </div>
+            <div class="status">
+                <img src="./assets/artistric-profile.png" alt="profile-pic" class="profile-pic">
+                <span class="username">artistic_vision_96k</span>
+            </div>
+        </section>
+        <section class="post-container">
+            <div class="post">
+                <div class="post-header">
+                    <div class="sender-info">
+                        <img src="./assets/nasa-profile.png" alt="sender" class="sender">
+                        <snan class="sender-name">nasa</snan>
+                        <img src="./assets/blue-tick.png" alt="blue-tick" class="blue-tick">
+                    </div>
+                    <img src="./assets/more.png" alt="more" class="more-options">
+                </div>
+                <div class="post-body">
+                    <img src="./assets/nasa-post.jpg" alt="post" class="post-image">
+                    <div class="post-actions-container">
+                        <div class="post-actions">
+                            <img src="./assets/like.png" alt="like" class="post-action">
+                            <img src="./assets/comment.png" alt="comment" class="post-action">
+                            <img src="./assets/share.png"   alt="share" class="post-action">
+                        </div>
+                        <img src="./assets/save.png" alt="save" class="post-action">
+                    </div>
+                    <div class="likes-section">
+                        <span class="likes-count">9572</span>&nbsp;likes
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <div class="sender-info">
+                        <img src="./assets/billi-profile.png" alt="sender" class="sender">
+                        <snan class="sender-name">billieeilish</snan>
+                        <img src="./assets/blue-tick.png" alt="blue-tick" class="blue-tick">
+                    </div>
+                    <img src="./assets/more.png" alt="more" class="more-options">
+                </div>
+                <div class="post-body">
+                    <img src="./assets/billi.png" alt="post" class="post-image">
+                    <div class="post-actions-container">
+                        <div class="post-actions">
+                            <img src="./assets/like.png" alt="like" class="post-action">
+                            <img src="./assets/comment.png" alt="comment" class="post-action">
+                            <img src="./assets/share.png"   alt="share" class="post-action">
+                        </div>
+                        <img src="./assets/save.png" alt="save" class="post-action">
+                    </div>
+                    <div class="likes-section">
+                        <span class="likes-count">95,372</span>&nbsp;likes
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="sender-info">
+                        <img src="./assets/charlieputh-profile.png" alt="sender" class="sender">
+                        <snan class="sender-name">charlieputh</snan>
+                        <img src="./assets/blue-tick.png" alt="blue-tick" class="blue-tick">
+                    </div>
+                    <img src="./assets/more.png" alt="more" class="more-options">
+                </div>
+                <div class="post-body">
+                    <img src="./assets/charlieputh-post.png" alt="post" class="post-image">
+                    <div class="post-actions-container">
+                        <div class="post-actions">
+                            <img src="./assets/like.png" alt="like" class="post-action">
+                            <img src="./assets/comment.png" alt="comment" class="post-action">
+                            <img src="./assets/share.png"   alt="share" class="post-action">
+                        </div>
+                        <img src="./assets/save.png" alt="save" class="post-action">
+                    </div>
+                    <div class="likes-section">
+                        <span class="likes-count">45,572</span>&nbsp;likes
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="sender-info">
+                        <img src="./assets/GOT-profile.png" alt="sender" class="sender">
+                        <snan class="sender-name">gameofthrones</snan>
+                        <img src="./assets/blue-tick.png" alt="blue-tick" class="blue-tick">
+                    </div>
+                    <img src="./assets/more.png" alt="more" class="more-options">
+                </div>
+                <div class="post-body">
+                    <img src="./assets/GOT-post.png" alt="post" class="post-image">
+                    <div class="post-actions-container">
+                        <div class="post-actions">
+                            <img src="./assets/like.png" alt="like" class="post-action">
+                            <img src="./assets/comment.png" alt="comment" class="post-action">
+                            <img src="./assets/share.png"   alt="share" class="post-action">
+                        </div>
+                        <img src="./assets/save.png" alt="save" class="post-action">
+                    </div>
+                    <div class="likes-section">
+                        <span class="likes-count">17,578</span>&nbsp;likes
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="sender-info">
+                        <img src="./assets/natgeotravel-profile.png" alt="sender" class="sender">
+                        <snan class="sender-name">natgeotravel</snan>
+                        <img src="./assets/blue-tick.png" alt="blue-tick" class="blue-tick">
+                    </div>
+                    <img src="./assets/more.png" alt="more" class="more-options">
+                </div>
+                <div class="post-body">
+                    <img src="./assets/natgeotravel-post.png" alt="post" class="post-image">
+                    <div class="post-actions-container">
+                        <div class="post-actions">
+                            <img src="./assets/like.png" alt="like" class="post-action">
+                            <img src="./assets/comment.png" alt="comment" class="post-action">
+                            <img src="./assets/share.png"   alt="share" class="post-action">
+                        </div>
+                        <img src="./assets/save.png" alt="save" class="post-action">
+                    </div>
+                    <div class="likes-section">
+                        <span class="likes-count">32,774</span>&nbsp;likes
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="sender-info">
+                        <img src="./assets/marvel-profile.png" alt="sender" class="sender">
+                        <snan class="sender-name">marvelstudios</snan>
+                        <img src="./assets/blue-tick.png" alt="blue-tick" class="blue-tick">
+                    </div>
+                    <img src="./assets/more.png" alt="more" class="more-options">
+                </div>
+                <div class="post-body">
+                    <img src="./assets/post-marvel.png" alt="post" class="post-image">
+                    <div class="post-actions-container">
+                        <div class="post-actions">
+                            <img src="./assets/like.png" alt="like" class="post-action">
+                            <img src="./assets/comment.png" alt="comment" class="post-action">
+                            <img src="./assets/share.png"   alt="share" class="post-action">
+                        </div>
+                        <img src="./assets/save.png" alt="save" class="post-action">
+                    </div>
+                    <div class="likes-section">
+                        <span class="likes-count">11,582</span>&nbsp;likes
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="sender-info">
+                        <img src="./assets/artistric-profile.png" alt="sender" class="sender">
+                        <snan class="sender-name">artistic_vision_96k</snan>
+                        <img src="./assets/blue-tick.png" alt="blue-tick" class="blue-tick">
+                    </div>
+                    <img src="./assets/more.png" alt="more" class="more-options">
+                </div>
+                <div class="post-body">
+                    <img src="./assets/artistric-post.png" alt="post" class="post-image">
+                    <div class="post-actions-container">
+                        <div class="post-actions">
+                            <img src="./assets/like.png" alt="like" class="post-action">
+                            <img src="./assets/comment.png" alt="comment" class="post-action">
+                            <img src="./assets/share.png"   alt="share" class="post-action">
+                        </div>
+                        <img src="./assets/save.png" alt="save" class="post-action">
+                    </div>
+                    <div class="likes-section">
+                        <span class="likes-count">11,582</span>&nbsp;likes
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <img src="./assets/home.png" alt="option" class="footer-action">
+            <img src="./assets/search.png" alt="option" class="footer-action">
+            <img src="./assets/reels.png" alt="option" class="footer-action">
+            <img src="./assets/like.png" alt="option" class="footer-action">
+            <img src="./assets/user-profile.jpeg" alt="option" class="footer-action user">
+        </footer>
+    </div>
+</body>
+</html>
