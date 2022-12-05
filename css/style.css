@@ -68,7 +68,7 @@ footer {
     display: none;
 }
 .status {
-    padding: 16px 0 16px 16px;
+    padding: 16px 0 7px 16px;
     display: flex;
     flex-direction: column;
     font-size: 14px;
